@@ -1,0 +1,49 @@
+<!DOCTYPE html> <html><head>
+        <title>5.P Starter Code [RENAME YOUR TITLE]</title>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap" rel="stylesheet">
+    <style>body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #17d3ff;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+}</style></head>
+    <body>
+        <div class="title">
+            <h1>Which Rocket League Car you Use?</h1>
+        </div>
+        <div class="questions">
+            <h4>how long do you play rocket league for each day?</h4>
+            <input class="Answer1" placeholder="number 0-5"> <br>
+            <img src="https://pbs.twimg.com/media/EiYpSGrXkAAf6Jz.jpg:large">
+            <h4>What Rank Are You in?</h4>
+            <h5>Bronze</h5>
+            <input class="Answer2" placeholder="your answer">
+            <br><img src="https://www.epicgames.com/help/en-US/c-Category_RocketLeague/c-RocketLeague_Gameplay/attachments/015QP000000EXXq">
+        </div>
+        <button class="submit">Submit</button>
+        <div class="result">
+            this is where the user will see their quiz result!
+        </div>
+            
+
+
+
+    
+<script>
+/*__POPCODESTART__*/
+var button = document.querySelector(".submit");
+var result = document.querySelector(".result");
+
+button.onclick = function () {
+  var Answer1 = Number(document.querySelector(".Answer1").value);
+  var Answer2 = document.querySelector(".Answer2").value;
+
+  if (Answer2 === "Unranked" || Answer2 === "Bronze" || Answer2 === "Silver" || Answer2 === "Gold" || Answer2 === "Plat" && Answer1 < 3) {
+    result.innerHTML = "You are the Fennec";
+  }
+}; //write SS if-else conditional statement below
+//write SS if-else conditional statement below
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBvcGNvZGVQcmV2aWV3LmpzIl0sIm5hbWVzIjpbImJ1dHRvbiIsImRvY3VtZW50IiwicXVlcnlTZWxlY3RvciIsInJlc3VsdCIsIm9uY2xpY2siLCJBbnN3ZXIxIiwiTnVtYmVyIiwidmFsdWUiLCJBbnN3ZXIyIiwiaW5uZXJIVE1MIl0sIm1hcHBpbmdzIjoiQUFBQSxJQUFJQSxNQUFNLEdBQUdDLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixTQUF2QixDQUFiO0FBQ0EsSUFBSUMsTUFBTSxHQUFHRixRQUFRLENBQUNDLGFBQVQsQ0FBdUIsU0FBdkIsQ0FBYjs7QUFFQUYsTUFBTSxDQUFDSSxPQUFQLEdBQWlCLFlBQVc7QUFDeEIsTUFBSUMsT0FBTyxHQUFHQyxNQUFNLENBQUNMLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixFQUFtQ0ssS0FBcEMsQ0FBcEI7QUFDQSxNQUFJQyxPQUFPLEdBQUdQLFFBQVEsQ0FBQ0MsYUFBVCxDQUF1QixVQUF2QixFQUFtQ0ssS0FBakQ7O0FBQ0EsTUFBR0MsT0FBTyxLQUFJLFVBQVgsSUFBeUJBLE9BQU8sS0FBSyxRQUFyQyxJQUFpREEsT0FBTyxLQUFLLFFBQTdELElBQXlFQSxPQUFPLEtBQUssTUFBckYsSUFBK0ZBLE9BQU8sS0FBSyxNQUFaLElBQXNCSCxPQUFPLEdBQUcsQ0FBbEksRUFBb0k7QUFDcElGLElBQUFBLE1BQU0sQ0FBQ00sU0FBUCxHQUFtQixvQkFBbkI7QUFFQztBQUNKLENBUEQsQyxDQVFJO0FBR0EiLCJzb3VyY2VzQ29udGVudCI6WyJsZXQgYnV0dG9uID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5zdWJtaXRcIik7XG5sZXQgcmVzdWx0ID0gZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5yZXN1bHRcIik7XG5cbmJ1dHRvbi5vbmNsaWNrID0gZnVuY3Rpb24oKSB7XG4gICAgbGV0IEFuc3dlcjEgPSBOdW1iZXIoZG9jdW1lbnQucXVlcnlTZWxlY3RvcihcIi5BbnN3ZXIxXCIpLnZhbHVlKTtcbiAgICBsZXQgQW5zd2VyMiA9IGRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoXCIuQW5zd2VyMlwiKS52YWx1ZTtcbiAgICBpZihBbnN3ZXIyPT09IFwiVW5yYW5rZWRcIiB8fCBBbnN3ZXIyID09PSBcIkJyb256ZVwiIHx8IEFuc3dlcjIgPT09IFwiU2lsdmVyXCIgfHwgQW5zd2VyMiA9PT0gXCJHb2xkXCIgfHwgQW5zd2VyMiA9PT0gXCJQbGF0XCIgJiYgQW5zd2VyMSA8IDMpe1xuICAgIHJlc3VsdC5pbm5lckhUTUwgPSBcIllvdSBhcmUgdGhlIEZlbm5lY1wiO1x0XG4gICAgICAgIFxuICAgIH1cbn07XG4gICAgLy93cml0ZSBTUyBpZi1lbHNlIGNvbmRpdGlvbmFsIHN0YXRlbWVudCBiZWxvd1xuXG4gICAgICAgICAgICAgICAgICBcbiAgICAvL3dyaXRlIFNTIGlmLWVsc2UgY29uZGl0aW9uYWwgc3RhdGVtZW50IGJlbG93XG5cblxuXG5cblxuXG5cbiJdfQ==</script></body></html>
